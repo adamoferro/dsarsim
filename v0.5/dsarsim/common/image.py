@@ -1,9 +1,9 @@
-# 	Copyright 2015 Adamo Ferro
+#   Copyright 2015 Adamo Ferro
 #
-#	This file is part of dSARsim.
+#   This file is part of dSARsim.
 #
 #   dSARsim is free software: you can redistribute it and/or modify
-# 	it under the terms of the GNU General Public License as published by
+#   it under the terms of the GNU General Public License as published by
 #   the Free Software Foundation, either version 3 of the License, or
 #   (at your option) any later version.
 #
@@ -49,10 +49,10 @@ class image:
         self.image=numpy.ones(self.size,dtype=self.matrix_type)*value
 
         
-    def rotate(self,angle,rshp,nodatav):
+    def rotate(self,angle,rshp,nodatav,order=3):
         #~ angle > 0 means counterclockwise rotation
         try:
-            tmp_img=scipy.ndimage.interpolation.rotate(self.image, angle, axes=(1, 0), reshape=rshp, output=None, order=3, mode='constant', cval=nodatav, prefilter=True)
+            tmp_img=scipy.ndimage.interpolation.rotate(self.image, angle, axes=(1, 0), reshape=rshp, output=None, order=order, mode='constant', cval=nodatav, prefilter=True)
         except:
             return -1
         self.image=tmp_img

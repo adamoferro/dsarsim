@@ -1,9 +1,9 @@
-# 	Copyright 2015 Adamo Ferro
+#   Copyright 2015 Adamo Ferro
 #
-#	This file is part of dSARsim.
+#   This file is part of dSARsim.
 #
 #   dSARsim is free software: you can redistribute it and/or modify
-# 	it under the terms of the GNU General Public License as published by
+#   it under the terms of the GNU General Public License as published by
 #   the Free Software Foundation, either version 3 of the License, or
 #   (at your option) any later version.
 #
@@ -196,14 +196,14 @@ class simulator:
             if self.direction=='e':
                 if self.debug_mode:
                     print("INFO: Rotating by 180 degrees to restore North position...")
-                if(self.output_image.rotate(180,True,0)!=0):
+                if(self.output_image.rotate(180,True,0,0)!=0):
                     print("ERROR: Problem during output image rotation. Using not rotated output.")
 
                     
             if self.rotate_back and self.aa!=0:
                 if self.debug_mode:
                     print("INFO: Rotating back output image...")                
-                if(self.output_image.rotate(-self.aa,True,0)!=0):
+                if(self.output_image.rotate(-self.aa,True,0,0)!=0):
                     print("ERROR: Problem during output image rotation. Using not rotated output.")
                 osize_tmp=self.output_image.getImageInfo()[0]
                 tl_corner=(int(osize_tmp[0]/2)-int(self.isize[0]/2),int(osize_tmp[1]/2)-int(self.isize[1]/2))
