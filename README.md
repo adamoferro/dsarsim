@@ -2,7 +2,7 @@
 
 dSARsim is a dummy Synthetic Aperture Radar (SAR) simulator written in python v3 which is suited for didactic purposes.
 
-The pseudo-simulation is carried out taking in account only the scene geometry using a simple rule. Radiometry is NOT simulated. The result is a grayscale scene where it is possible to visually discriminate the typical geometrical effects seen in SAR images, e.g. layover, shadowing and foreshortening.
+The pseudo-simulation is carried out taking in account only the scene geometry and following simple rules. Radiometry is NOT simulated. The result is a grayscale scene where it is possible to visually discriminate the typical geometrical effects seen in SAR images, e.g. layover, shadowing and foreshortening, and the number of main scatterers for each pixel of the output image.
 
 The software takes as input a Digital Terrain Model (DTM) or a Digital Surface Model (DSM) and returns as output a pseudo-SAR scene in slant range geometry. The main parameters that can be varied are:
 
@@ -20,7 +20,7 @@ For further details on the pseudo-simulation principles please have a look at th
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; show help message and exit.
  
 `-i INPUT, --input INPUT`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; input DTM/DSM image (32 bit floating-point GeoTIFF image). If the image does not contain pixel size information, dSARsim assumes the pixel spacing is equal to 1 m.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; input DTM/DSM image (32 bit floating-point GeoTIFF image in UTM coordinates). If the image does not contain pixel size information, dSARsim assumes the pixel spacing is equal to 1 m.
 
 `-o OUTPUT, --output OUTPUT`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output image (same format as input).
