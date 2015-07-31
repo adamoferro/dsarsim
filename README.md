@@ -14,6 +14,10 @@ The software takes as input a Digital Terrain Model (DTM) or a Digital Surface M
 
 For further details on the pseudo-simulation principles please have a look at the related documentation, when it will be available... until then try to understand the comments within the code! :)
 
+### Want to host dSARsim?
+
+If you wish to host dSARsim on your web server to provide an online "dummy" simulation didactic tool, contact me on www.af-projects.it and we may collaborate!
+
 ### Usage
 
 `-h, --help`<br>
