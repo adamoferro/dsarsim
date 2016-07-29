@@ -1,6 +1,6 @@
 # dSARsim - Dummy Synthetic Aperture Radar Simulator
 
-dSARsim is a dummy Synthetic Aperture Radar (SAR) simulator written in python v3 which is suited for didactic purposes.
+dSARsim is a free and open-source dummy Synthetic Aperture Radar (SAR) simulator written in python v3 which is suited for didactic purposes.
 
 The pseudo-simulation is carried out taking in account only the scene geometry and following simple rules. Radiometry is NOT simulated. The result is a grayscale scene where it is possible to visually discriminate the typical geometrical effects seen in SAR images, e.g. layover, shadowing and foreshortening, and the number of main scatterers for each pixel of the output image.
 
